@@ -69,12 +69,12 @@
 				var midBest,midSecondBest
 				if(val5>val6)
 				{
-					midBest=Math.floor((val5)/(2.334))
-					midSecondBest=Math.floor((val6)/(7))
+					midBest=((val5)/(2.333333333333333253)).toFixed(2)
+					midSecondBest=((val6)/(7)).toFixed(2)
 				}
 				else{
-					midBest=Math.floor((val6)/(2.334))
-					midSecondBest=Math.floor((val5)/(7))
+					midBest=((val6)/(2.333333333333333253)).toFixed(2)
+					midSecondBest=((val5)/(7)).toFixed(2)
 				}
 				var res=((aat+ha)/2)+(midBest+midSecondBest)
 				document.getElementById("output").value=res

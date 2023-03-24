@@ -69,18 +69,13 @@
 				var midBest,midSecondBest
 				if(val3>val3)
 				{
-					midBest=(val3)/(2.334)
-					midSecondBest=(val4)/(7)
-					midBest=midBest.toFixed(2)
-					midSecondBest=midSecondBest.toFixed(2)
+					midBest=Math.floor((val3)/(2.334))
+					midSecondBest=Math.floor((val4)/(7))
 				}
 				else{
-					midBest=(val4)/(2.334)
-					midSecondBest=(val3)/(7)
-					midBest=midBest.toFixed(2)
-					midSecondBest=midSecondBest.toFixed(2)
+					midBest=Math.floor((val4)/(2.334))
+					midSecondBest=Math.floor((val3)/(7))
 				}
-				document.body.style.backgroundColor="yellow"
 				var res=(aat)+(midBest+midSecondBest)
 				document.getElementById("output").value=res
 				document.getElementById("output").style.backgroundColor="green"
